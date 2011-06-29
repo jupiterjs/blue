@@ -1,0 +1,8 @@
+.enui_tabs li {
+	float: left;
+	border: solid 1px black;
+	padding: 10px;
+	list-style: none;
+}
+
+

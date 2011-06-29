@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+		<title>Enui.Select</title>
+        <style type='text/css'>
+            body {font-family: verdana}
+            .error {border: solid 1px red;}
+            .error_text { color: red; font-size: 10px;}
+            td {padding: 3px;}
+        </style>
+	</head>
+	<body>
+	    <h1>Enui.Select Demo</h1>
+		<select id='select1'></select>
+		<select id='select2'></select>
+		<script type='text/javascript' 
+                src='../../steal/steal.js?enui/select'>
+        </script>
+		<script type='text/javascript'>
+			$('#select1').enui_select({url: "propertytypes.json"});
+			$('#select2').enui_select({url: "propertystatus.json"});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+		<title>Blue.Paginate</title>
+        <style type='text/css'>
+            body {font-family: verdana}
+            .error {border: solid 1px red;}
+            .error_text { color: red; font-size: 10px;}
+            td {padding: 3px;}
+        </style>
+	</head>
+	<body>
+	    <h1>Blue.Paginate Demo</h1>
+		<div id='paginate'></div>
+		<a href='javascript://' id='miami'>Miami</a>
+		<a href='javascript://' id='thousand'>1000 items</a>
+		<script type='text/javascript' 
+                src='../../steal/steal.js?blue/paginate'>
+        </script>
+		<script type='text/javascript'>
+			$('#paginate').blue_paginate();
+			$('#miami').attr('href',  "#!"+  $.param({search: {name: 'miami'}})  )
+			 
+			$('#thousand').attr('href',  "#!"+  $.param({
+				search: {name: 'miami'},
+				params: {limit : 10, count: 1000, offset: 0}})  )
+			 
+		</script>
+	</body>
+</html>
