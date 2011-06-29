@@ -1,0 +1,9 @@
+[submodule "jquery"]
+	path = jquery
+	url = git@github.com:jupiterjs/jquerymx
+[submodule "steal"]
+	path = steal
+	url = git@github.com:jupiterjs/steal
+[submodule "mxui"]
+	path = mxui
+	url = git@github.com:jupiterjs/mxui
